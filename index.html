@@ -121,7 +121,7 @@
             //overpassQuery = encodeURIComponent("node" + '[birds_nest=stork]' + bbString + ";out body;"),
             overpassQuery = encodeURIComponent(
                 'area["boundary"="administrative"]["name:uk"="Україна"]->.a;node(area.a)[birds_nest=stork](newer:"2020-01-01T00:00:00Z");out body;'),
-                overpassURL = "http://overpass-api.de/api/interpreter?data=[out:json];" + overpassQuery;
+                overpassURL = "https://overpass-api.de/api/interpreter?data=[out:json];" + overpassQuery;
 
             $.ajax({
                 url: overpassURL,
