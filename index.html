@@ -75,8 +75,9 @@
         function formatMarkerInfo(node) {
             var link = '<a target="_blank" href="http://www.openstreetmap.org/edit?editor=id&node=' + node.id +
                 '">Edit this entry in iD</a><br>';
-            //var user = '<b>Added by: </b>' + '<a href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
-            var timestamp = '<b>Timestamp: </b>' + node.timestamp;
+            var user = '<b>Added by: </b>' + '<a target="_blank" href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
+
+            var timestamp = '<b>Timestamp: </b>' + node.timestamp.replace('T', ' ').replace('Z', '');
 
             var r = $('<table>');
 
@@ -90,14 +91,12 @@
                 r.append($('<tr>').append($('<th>').text(i)).append($('<td>').html(text)));
             }
 
-
             var tags = $('<div>').append(r).html();
 
             var img = '<b>Foto: </b>' + '<a href="' + node.tags.image + '">' + "foto link" + '</a><br>';
             if (node.tags.image == null) img = '';
 
-
-            return link + '<br>' + /*user + timestamp + '<br>' + '<br>' +*/ '<b>Tags:</b>' + '<br>' + tags + '<br>' + img;
+            return user + '<br>' + timestamp + '<br>' + '<br>' + '<b>Tags:</b>' + '<br>' + tags + '<br>' + img + link;
         };
 
         function makeMarkers() {
@@ -125,7 +124,7 @@
             //var bbString = formatBBox(),
             //overpassQuery = encodeURIComponent("node" + '[birds_nest=stork]' + bbString + ";out body;"),
             overpassQuery = encodeURIComponent(
-                'area["boundary"="administrative"]["name:uk"="Україна"]->.a;node(area.a)[birds_nest=stork](newer:"2020-01-01T00:00:00Z");out body;'),
+                'area["boundary"="administrative"]["name:uk"="Україна"]->.a;node(area.a)[birds_nest=stork](newer:"2020-01-01T00:00:00Z");out meta;'),
                 overpassURL = "https://overpass-api.de/api/interpreter?data=[out:json];" + overpassQuery;
 
             $.ajax({
