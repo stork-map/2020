@@ -73,26 +73,31 @@
         */
 
         function formatMarkerInfo(node) {
-
-            var link = '<a href="http://www.openstreetmap.org/edit?editor=id&node=' + node.id +
+            var link = '<a target="_blank" href="http://www.openstreetmap.org/edit?editor=id&node=' + node.id +
                 '">Edit this entry in iD</a><br>';
             //var user = '<b>Added by: </b>' + '<a href="http://www.openstreetmap.org/user/' + node.user + '">' + node.user + '</a><br>';
             var timestamp = '<b>Timestamp: </b>' + node.timestamp;
 
             var r = $('<table>');
 
-            for (var i in node.tags)
-                r.append($('<tr>').append($('<th>').text(i)).append($('<td>').text(node.tags[i])));
+            for (var i in node.tags) {
+                var text = node.tags[i];
+
+                if (i === 'mapillary') {
+                    text = '<a target="_blank" href="https://www.mapillary.com/map/im/' + text + '">' + text + '</a>'; 
+                }
+
+                r.append($('<tr>').append($('<th>').text(i)).append($('<td>').html(text)));
+            }
+
 
             var tags = $('<div>').append(r).html();
-
 
             var img = '<b>Foto: </b>' + '<a href="' + node.tags.image + '">' + "foto link" + '</a><br>';
             if (node.tags.image == null) img = '';
 
 
-            return link + '<br>' + /*user + timestamp + '<br>' + '<br>' +*/ '<b>Tags:</b>' + '<br>' + tags + '<br>' +
-                img;
+            return link + '<br>' + /*user + timestamp + '<br>' + '<br>' +*/ '<b>Tags:</b>' + '<br>' + tags + '<br>' + img;
         };
 
         function makeMarkers() {
