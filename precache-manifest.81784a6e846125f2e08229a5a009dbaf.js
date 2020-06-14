@@ -1,86 +1,90 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bd9fa8b08f6bf964f9ad",
-    "url": "/css/app.e0e73bb2.css"
+    "revision": "924009201cb9ec35d44ef3dc11cc501d",
+    "url": "/2020/README.md"
+  },
+  {
+    "revision": "fa043ee18a84b4562df8",
+    "url": "/2020/css/app.e0e73bb2.css"
   },
   {
     "revision": "fd2197e7b77d3a3e7a43",
-    "url": "/css/chunk-vendors.686dd7fc.css"
+    "url": "/2020/css/chunk-vendors.686dd7fc.css"
   },
   {
     "revision": "8f326d0858a54d5fab35ef929dac42c1",
-    "url": "/favicon.png"
+    "url": "/2020/favicon.png"
   },
   {
     "revision": "7bb67099bb0d97163d08c9b92b685e42",
-    "url": "/img/mapillary_logo.7bb67099.png"
+    "url": "/2020/img/mapillary_logo.7bb67099.png"
   },
   {
     "revision": "de2944995ea6c57df82e521e70898e24",
-    "url": "/img/osm_logo.de294499.png"
+    "url": "/2020/img/osm_logo.de294499.png"
   },
   {
     "revision": "5b946ea50fc0ad5f6defc603b62b6398",
-    "url": "/img/pointer-wheat.5b946ea5.svg"
+    "url": "/2020/img/pointer-wheat.5b946ea5.svg"
   },
   {
     "revision": "e6734d100b29734992d543c5c16fa239",
-    "url": "/img/pointer-white.e6734d10.svg"
+    "url": "/2020/img/pointer-white.e6734d10.svg"
   },
   {
     "revision": "020d7e85b2d34eac2e6c3baf925e20f8",
-    "url": "/img/scgis_logo.020d7e85.png"
+    "url": "/2020/img/scgis_logo.020d7e85.png"
   },
   {
     "revision": "4365cd3c08542b32b14dc6f6eda99b46",
-    "url": "/img/stepper-left.4365cd3c.svg"
+    "url": "/2020/img/stepper-left.4365cd3c.svg"
   },
   {
     "revision": "f3bdcc97504bd826edbf2b2d1072d579",
-    "url": "/img/stepper-play.f3bdcc97.svg"
+    "url": "/2020/img/stepper-play.f3bdcc97.svg"
   },
   {
     "revision": "bc856f8670be9c70177cc79d548dd54c",
-    "url": "/img/stepper-right.bc856f86.svg"
+    "url": "/2020/img/stepper-right.bc856f86.svg"
   },
   {
     "revision": "8e3cdb421bdba568c22ef0e0555faf55",
-    "url": "/img/stepper-stop.8e3cdb42.svg"
+    "url": "/2020/img/stepper-stop.8e3cdb42.svg"
   },
   {
     "revision": "d825567a1a1968dea71c7424e74f2996",
-    "url": "/img/turn-around.d825567a.svg"
+    "url": "/2020/img/turn-around.d825567a.svg"
   },
   {
     "revision": "48f442bffb936063caebc146efa367fa",
-    "url": "/img/turn.48f442bf.svg"
+    "url": "/2020/img/turn.48f442bf.svg"
   },
   {
-    "revision": "df2776dddbe690645b739cc6426464a7",
-    "url": "/index.html"
+    "revision": "89c191d846a2ead24c44cf6f94f21329",
+    "url": "/2020/index.html"
   },
   {
-    "revision": "bd9fa8b08f6bf964f9ad",
-    "url": "/js/app.d077401c.js"
+    "revision": "fa043ee18a84b4562df8",
+    "url": "/2020/js/app.7146a57e.js"
   },
   {
     "revision": "fd2197e7b77d3a3e7a43",
-    "url": "/js/chunk-vendors.d7ee7ef7.js"
+    "url": "/2020/js/chunk-vendors.d7ee7ef7.js"
   },
   {
     "revision": "1a0345feecbac7d8b8a0",
-    "url": "/js/notfound.2d8c00ec.js"
+    "url": "/2020/js/notfound.2d8c00ec.js"
   },
   {
     "revision": "56a0ad51ea2e2d3909b28b22915fd7bf",
-    "url": "/manifest.json"
+    "url": "/2020/manifest.json"
   },
   {
     "revision": "b729228a2a812782c7ccd696968f09eb",
-    "url": "/page.png"
+    "url": "/2020/page.png"
   },
   {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
-    "url": "/robots.txt"
+    "url": "/2020/robots.txt"
   }
 ]);

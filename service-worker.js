@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.86ad2cf225a8b4fd99f7acab57e5b4f5.js"
+  "/2020/precache-manifest.81784a6e846125f2e08229a5a009dbaf.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "stork-map"});
